@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="user_profile.css"> <!-- Include your CSS file -->
+    <script src="user_profile.js"></script> <!-- Include Font Awesome for icons -->
+</head>
+<body>
+    <div class="back"></div>
+    <div class="registration-form">
+        <header>
+            <h1>Sign Up</h1>
+            <p>Fill in all information</p>
+        </header>
+        <form>
+            <div class="input-section email-section">
+                <input type="email" placeholder="ENTER YOUR E-MAIL HERE" autocomplete="off" class="email">
+                <div class="animated-button">
+                    <span class="icon-paper-plane">
+                        <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="next-button email">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section password-section folded">
+                <input type="password" placeholder="ENTER YOUR PASSWORD HERE" class="password">
+                <div class="animated-button">
+                    <span class="icon-lock">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <span class="next-button password">
+                        <i class="fa fa-arrow-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="input-section repeat-password-section folded">
+                <input type="password" placeholder="REPEAT YOUR PASSWORD HERE" class="repeat-password">
+                <div class="animated-button">
+                    <span class="icon-repeat-lock">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <span class="next-button repeat-password">
+                        <i class="fa fa-paper-plane"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="success">
+                <p>ACCOUNT CREATED</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

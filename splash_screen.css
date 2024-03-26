@@ -6,8 +6,9 @@ body {
   padding: 0;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height:max-content;
   width: 100vw;
+  position: fixed;
   
 }
 
@@ -29,7 +30,7 @@ h1 {
 
 .product-container {
   background-color: #a3bf74;
-  ;
+  background-blend-mode: lighten;
   padding: 1%;
   border-radius: 5vw;
   
