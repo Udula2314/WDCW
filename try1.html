@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOOD HEALTH AND WELL-BEING</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gallery</h1>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery">
+        <div class="thumbnail" onclick="toggleExtendedView(this)">
+          <img src="pic1.jpg" alt="Thumbnail 1">
+          <div class="overlay">
+            <p>Fitness</p>
+          </div>
+          <div class="extended-view">
+            <img src="pic1.jpg" alt="Larger Image 1">
+            <p>Maintaining the fitness of your body</p>
+          </div>
+        </div>
+        <div class="thumbnail" onclick="toggleExtendedView(this)">
+            <img src="pic2.png" alt="Thumbnail 2">
+            <div class="overlay">
+              <p>Mental Health</p>
+            </div>
+            <div class="extended-view">
+              <img src="pic2.png" alt="Larger Image 2">
+              <p>Mental Health</p>
+            </div>
+          </div>
+        <!-- Add more thumbnails as needed -->
+    </section>    
+  </main>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+
+  <div class="overlay"></div> <!-- Move overlay outside of main content -->
+
+  <script src="script.js"></script>
+</body>
+</html>
