@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("ranger-4df6c1b6.png");
+  background-color: darkgreen;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ h1 {
 }
 
 .product-container {
-  background-color: #a3bf74;
+  background-color: white;
   background-blend-mode: lighten;
   padding: 1%;
   border-radius: 5vw;
