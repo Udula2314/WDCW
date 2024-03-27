@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .team-members {
@@ -30,12 +30,10 @@ body {
 
 .details {
     position: relative;
-    bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(187, 179, 179, 0.8);
-    padding: 10px;
-    border-radius: 5px;
+    background-color: rgba(218, 210, 210, 0.8);
+    padding: 12px;
     opacity: 0;
     transition: opacity 0.3s;
     width: 200px;
