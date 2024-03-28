@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Creation</title>
+  <link rel="stylesheet" href="user_profile.css">
+</head>
+<body>
+  <h1>Create Your User Profile</h1>
+ 
+  <div class="prompt">
+    <p>What is your name?</p>
+    <button class="back-button"onclick="goBack()">Back</button>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button class="next-button" onclick="nextPrompt()">Next</button>
+  </div>
+ 
+  <div class="prompt" style="display: none;">
+    <p>What is your username?</p>
+    <button class="back-button"onclick="goBack()">Back</button>
+    <input type="text" id="usernameInput" placeholder="Enter your username">
+    <button class="next-button" onclick="nextPrompt()">Next</button>
+  </div>
+ 
+  <div class="prompt" style="display: none;">
+    <p>What is your age? </p>
+    <button class="back-button"onclick="goBack()">Back</button>
+    <input type="text" id="interestsInput" placeholder="Enter your age">
+    <button class="next-button" onclick="nextPrompt()">Next</button>
+  </div>
+
+  <div class="prompt" style="display: none;">
+    <p>What is your gender? </p>
+    <button class="back-button"onclick="goBack()">Back</button>
+    <input type="text" id="interestsInput" placeholder="Enter your gender">
+    <button class="next-button" onclick="nextPrompt()">Next</button>
+  </div>
+
+  <div class="prompt" style="display: none;">
+    <p>Do you agree with privacy terms? </p>
+    <button class="back-button"onclick="goBack()">Back</button>
+    <input type="text" id="interestsInput" placeholder="Enter yes or No">
+    <button class="next-button" onclick="nextPrompt()">Next</button>
+  </div>
+ 
+  <div class="prompt" style="display: none;">
+    <p>Thank you for providing your information!</p>
+  </div>
+
+  <script src="user_profile.js" defer></script>
+ 
+</body>
+</html>

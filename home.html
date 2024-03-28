@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-    <title>TRY nav bar</title>
-    <style>
-        Add a black background color to the top navigation .topnav {
-            background-color: lightblue;
-            overflow: hidden;
-        }
-        /* Style the links inside the navigation bar */
-        
-        .topnav a {
-            float: left;
-            color: lightblue;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        /* Change the color of links on hover */
-        
-        .topnav a:hover {
-            background-color: #ddd;
-            color: lightblue;
-        }
-        /* Add a color to the active/current link */
-        
-        .topnav a.active {
-            text-decoration: underline;
-            color: lightblue;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <title>Homepage Goodh</title>
+
+    <link rel="stylesheet" href="home.css" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#Features">Features</a>
-        <a href="#Company">Company</a>
-        <a href="#Pricing">Pricing</a>
-        <a href="#customers">Customers</a>
-        <a href="#support">Support</a>
+
+    <div>
+        <nav>
+            <div class="nav-bar">
+                <i class="bx bx-menu sidebarOpen"></i>
+                <span class="logo navLogo"><a href="#">IIT</a></span>
+
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">IIT</a></span>
+                        <i class="bx bx-x siderbarClose"></i>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </div>
+
+    <script src="home.js"></script>
 </body>
 
 </html>
