@@ -15,3 +15,6 @@ function showSlide(n) {
     if (n < 0) { slideIndex = slides.children.length - 1; } // Reset index to end
     slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`; // Move slides
 }
+
+
+
