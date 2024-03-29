@@ -11,7 +11,6 @@
 :root {
     --main-color: #588d2c;
     --second-color: #34ac1d;
-    --btn-color: #e0cc16;
     --btn-color1: #e01616;
     --txt-color: #bbbbbb;
     --txt-white: #ffffff;
@@ -359,19 +358,18 @@ header.shrink {
     transform: translateY(-50%);
 }
 
-.btn {
+.btn1 {
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
-    background-color: var(--btn-color);
     color: var(--txt-white);
     transition: all 0.3s ease 0s;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: var(--txt-white);
     color: var(--main-color);
 }
