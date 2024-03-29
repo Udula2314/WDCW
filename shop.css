@@ -27,7 +27,8 @@
 
 .right-first-image {
     position: relative;
-    width: 100%; /* Set position relative for proper absolute positioning */
+    width: 100%;
+     /* Set position relative for proper absolute positioning */
 }
 
 .thumb {
@@ -44,10 +45,10 @@
 
 .inner-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 101%;
+    height:100%;
+    top:-6.5%;
+     
+    width: 100%;
     
 
 }
@@ -90,8 +91,8 @@
 
 
 
-.thumb:hover .catergory_name{
-    transform: translateY(-120%);
+.thumb:hover .inner-content{
+    transform: translateY(-88%);
     transition: transform 0.3s ease;
     color: #422800;
     
@@ -111,9 +112,9 @@
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  font-size: 18px;
-  padding: 0 40px;
-  line-height: 50px;
+  font-size: 100%;
+  padding: 0  20%;
+  line-height: 270%;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -132,10 +133,74 @@
   transform: translate(2px, 2px);
 }
 
-@media (min-width: 768px) {
-  .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
+
+.food-display {
+    width: 80%; /* Set the width of the slider */
+    margin: 0 auto; /* Center the slider */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snapping to items */
+}
+
+.container-food {
+    display: flex; /* Display items in a row */
+    scroll-snap-type: x mandatory; /* Enable snapping to items */
+}
+
+.item {
+    position: relative; /* Set position relative for proper absolute positioning */
+    overflow: hidden;
+    width:100%;
+    text-align: center;
+    /* Align items to the start of the scroll container */
+}
+
+.food-items {
+    width: 100%; /* Make images fill their containers */
+}
+.scroller{
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll if content overflows */
+    width: 150%; /* Ensure the row takes up the full width */
+    align-items: center;
+    border:2px solid black;
+    margin-left: 17%;
+    
+}
+
+.prev-btn,
+.next-btn {
+    margin-top: 10px; /* Add margin between buttons and slider */
+}
+.col-lg-7{
+    flex: left; /* Set column width to auto */
+    width: 20%; /* Each column takes 25% of the container width */
+    padding: 15px; /* Adjust spacing between columns */
+    box-sizing: border-box; 
+    display: inline;
+    margin-left: 1.5%;
+}
+.smthin{
+    width:80%;
+    align-items: center;
+    
+    
+    margin-top:35%;
+
+}
+@media only screen and (max-width:100%){
+    body{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width:1309px){
+    body{
+        font-size:75%;
+    }
+}
+.containerr{
+    background-color: tranparent;
+    width:100%;
+    overflow: hidden;
 }
 
