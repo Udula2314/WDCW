@@ -1,134 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Inputs</title>
-<link rel="stylesheet" href="user input.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="team.css">
 </head>
 <body>
-
-<button onclick="openPrompt()">Open Prompt</button>
-
-<div class="overlay" id="promptContainer" style="display: none;">
-    <div class="modal">
-        <h1 id="stepTitle">Step 1 Personal Details | Question 1/8</h1>
-        <h1 id="promptTitle"></h1>
-        <div id="promptInputContainer"></div>
-        <br> <br>
-        <button onclick="nextStep()">Next</button>
-        <button onclick="skipStep()">Skip</button><br> <br>
-        <div id="progressBar">
-            <span id="progressText">0%</span>
-        </div>
-        <div id="userDetails"></div> <!-- New div to display user details -->
+  <br>
+  <h1>Student Details</h1>
+  <p>About Us - Hover over the images for details!</p>
+  <br><br><br>
+  <div class="team-members">
+    <div class="team-member">
+      <img src="Male1.jpg" alt="Student 1" class="thumbnail">
+      <div class="details">
+        <b><p>Udula Jayasekara</p>
+        <p>Role student 1</p>
+        <p>Designed splash screen and shop.</p></b>
+        <p>User profile | Team</p>
+      </div>
     </div>
-</div>
-
-<script>
-    var currentStep = 0;
-    var totalSteps = 8; // Changed to include individual prompts
-    var prompts = [
-        "Name", "Surname", "Age", "Gender", "Agree with privacy terms",
-        "Phone Number", "Email", "Social Media"
-    ];
-    var userDetails = {}; // Object to store user details
-    
-    function openPrompt() {
-        document.getElementById('promptContainer').style.display = 'flex';
-        updatePrompt(); // Call updatePrompt function when opening the prompt
-    }
-
-    function nextStep() {
-        if (currentStep < totalSteps) {
-            var input = document.getElementById('promptInput').value;
-            if (currentStep === 3) { // If current step is Gender
-                input = document.querySelector('input[name="gender"]:checked');
-                if (input) {
-                    input = input.value;
-                } else {
-                    alert("Please select a gender.");
-                    return;
-                }
-            }
-            if (currentStep === 4) { // If current step is Agree with privacy terms
-                input = document.querySelector('input[name="privacy"]:checked');
-                if (input) {
-                    input = input.value;
-                } else {
-                    alert("Please agree to the privacy terms.");
-                    return;
-                }
-            }
-            userDetails[prompts[currentStep]] = input; // Store user input
-            document.getElementById('promptInput').value = ''; // Clear the input field
-            currentStep++;
-            updateProgressBar();
-            updatePrompt();
-            updateUserDetails(); // Update user details
-        }
-    }
-    
-    function skipStep() {
-        if (currentStep < totalSteps) {
-            currentStep++;
-            updateProgressBar();
-            updatePrompt();
-        }
-    }
-function updateProgressBar() {
-    var progressBar = document.getElementById('progressBar');
-    var progressText = document.getElementById('progressText');
-    var progress = (currentStep / totalSteps) * 100;
-    progressBar.style.width = progress + '%';
-    progressBar.style.backgroundColor = '#66BB6A'; // Set the background color here
-    progressText.innerText = Math.round(progress) + '%';
-}
-
-    function updatePrompt() {
-        var promptTitle = document.getElementById('promptTitle');
-        var stepTitle = document.getElementById('stepTitle');
-        var promptInputContainer = document.getElementById('promptInputContainer');
-        stepTitle.innerText = "Step " + (currentStep + 1) + " Personal Details | Question " + (currentStep + 1) + "/8";
-        if (currentStep < totalSteps) {
-            promptTitle.innerText = "Enter your " + prompts[currentStep] + ": ";
-            if (currentStep === 3) { // If current step is Gender
-                promptInputContainer.innerHTML = `
-                    <input type="radio" id="male" name="gender" value="Male" checked>
-                    <label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label><br>
-                    <input type="radio" id="other" name="gender" value="Other">
-                    <label for="other">Other</label><br>
-                `;
-            } else if (currentStep === 4) { // If current step is Agree with privacy terms
-                promptInputContainer.innerHTML = `
-                    <input type="radio" id="agree" name="privacy" value="Agree" checked>
-                    <label for="agree">Agree</label><br>
-                    <input type="radio" id="disagree" name="privacy" value="Disagree">
-                    <label for="disagree">Disagree</label><br>
-                `;
-            } else {
-                promptInputContainer.innerHTML = '<input type="text" id="promptInput">';
-            }
-        } else {
-            // If all steps are completed
-            promptTitle.innerText = "Thank you for completing the steps!";
-            promptInputContainer.innerHTML = '';
-            document.getElementById('promptInput').style.display = 'none';
-        }
-    }
-
-    function updateUserDetails() {
-        var userDetailsDiv = document.getElementById('userDetails');
-        userDetailsDiv.innerHTML = ""; // Clear previous details
-        for (var key in userDetails) {
-            if (userDetails.hasOwnProperty(key)) {
-                userDetailsDiv.innerHTML += "<p>" + key + ": " + userDetails[key] + "</p>";
-            }
-        }
-    }
-</script>
-
+    <div class="team-member">
+      <img src="Male2.jpg" alt="Student 2" class="thumbnail">
+      <div class="details">
+        <b><p>Thejan Paranagama</p>
+        <p>Role student 2</p>
+        <p>Implemented home page and feedback page.</p></b>
+        <p>User profile | Team</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="Female1.jpg" alt="Student 3" class="thumbnail">
+      <div class="details">
+        <b><p>Sathnara Perera</p>
+        <p>Role student 3</p>
+        <p>Designed user profile and team page.</p></b>
+        <p>User profile | Team</p>
+      </div>
+    </div>
+    <div class="team-member">
+      <img src="Female2.jpg" alt="Student 4" class="thumbnail">
+      <div class="details">
+        <b><p>Piyumi Gunasekara</p>
+        <p>Role student 4</p>
+        <p>Implemented gallery and sitemap.</p></b>
+        <p>User profile | Team</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
