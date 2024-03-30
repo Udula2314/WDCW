@@ -4,7 +4,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: var(--second-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,4 +16,36 @@ header {
 header.shrink {
     height: 60px;
     background-color: var(--second-color);
+}
+
+.main-menu-wrapper {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.main-menu {
+    display: flex;
+    pointer-events: visible;
+}
+
+.main-menu>li>a {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: var(--txt-color);
+}
+
+.main-menu>li>a.active {
+    color: var(--txt-white);
+}
+
+.main-menu>li~li {
+    margin-left: 84px;
+}
+
+.main-menu>li>a:hover {
+    color: var(--txt-white);
 }
