@@ -53,7 +53,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: #34ac1d;
+    background-color: var(--second-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
