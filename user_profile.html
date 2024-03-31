@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Profile Creation</title>
-  <link rel="stylesheet" href="user_profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Creation</title>
+    <link rel="icon" href="./logo.png" />
+    <link rel="stylesheet" href="user_profile.css">
 </head>
+
 <body>
-  <h1>Create Your User Profile</h1>
+    <h1>Create Your User Profile</h1>
 
-  <div class="progress-bar-container">
-    <div class="progress-bar">
-      <div class="progress"></div>
+    <div class="progress-bar-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="step-indicator">Step 1 of 4</div>
     </div>
-    <div class="step-indicator">Step 1 of 4</div>
-  </div>
 
-  <div class="prompt">
-    <p>Enter your first name:</p>
-    <input type="text" id="firstNameInput" placeholder="First Name" data-label="First Name" data-step="1">
-    <p>Enter your surname:</p>
-    <input type="text" id="surnameInput" placeholder="Surname" data-label="Surname" data-step="1">
-    <p>Enter your age:</p>
-    <input type="text" id="ageInput" placeholder="Age" data-label="Age" data-step="1">
-    <p>Enter your email address:</p>
-    <input type="email" id="emailInput" placeholder="Email Address" data-label="Email Address" data-step="1">
-    <div>
-      <button class="next-button" onclick="nextStep()">Next</button>
+    <div class="prompt">
+        <p>Enter your first name:</p>
+        <input type="text" id="firstNameInput" placeholder="First Name" data-label="First Name" data-step="1">
+        <p>Enter your surname:</p>
+        <input type="text" id="surnameInput" placeholder="Surname" data-label="Surname" data-step="1">
+        <p>Enter your age:</p>
+        <input type="text" id="ageInput" placeholder="Age" data-label="Age" data-step="1">
+        <p>Enter your email address:</p>
+        <input type="email" id="emailInput" placeholder="Email Address" data-label="Email Address" data-step="1">
+        <div>
+            <button class="next-button" onclick="nextStep()">Next</button>
+        </div>
     </div>
-  </div>
 
-  <div class="prompt" style="display: none;">
-    <p>How often do you engage in physical activity per week?</p>
-    <input type="text" id="activityInput" placeholder="Eg: Once/twice a day/week" data-label="Eg: Once/twice a day/week" data-step="2">
-    <p>What types of physical activities do you enjoy?</p>
-    <input type="text" id="activityTypesInput" placeholder="Eg: Sports, Yoga, Jogging" data-label="Eg: Sports, Yoga, Jogging" data-step="2">
-    <p>Do you have any injuries that affect your ability to exercise?</p>
-    <input type="text" id="injuriesInput" placeholder="Injuries" data-label="Injuries" data-step="2">
-    <div class="button-container">
-      <button class="back-button" onclick="previousStep()">Back</button>
-      <button class="next-button" onclick="nextStep()">Next</button>
+    <div class="prompt" style="display: none;">
+        <p>How often do you engage in physical activity per week?</p>
+        <input type="text" id="activityInput" placeholder="Eg: Once/twice a day/week" data-label="Eg: Once/twice a day/week" data-step="2">
+        <p>What types of physical activities do you enjoy?</p>
+        <input type="text" id="activityTypesInput" placeholder="Eg: Sports, Yoga, Jogging" data-label="Eg: Sports, Yoga, Jogging" data-step="2">
+        <p>Do you have any injuries that affect your ability to exercise?</p>
+        <input type="text" id="injuriesInput" placeholder="Injuries" data-label="Injuries" data-step="2">
+        <div class="button-container">
+            <button class="back-button" onclick="previousStep()">Back</button>
+            <button class="next-button" onclick="nextStep()">Next</button>
+        </div>
     </div>
-  </div>
 
-  <div class="prompt" style="display: none;">
-    <p>Are you following any specific diet plan?</p>
-    <select id="dietPlanInput" data-label="Diet Plan" data-step="3">
+    <div class="prompt" style="display: none;">
+        <p>Are you following any specific diet plan?</p>
+        <select id="dietPlanInput" data-label="Diet Plan" data-step="3">
       <option value="Vegetarian">Vegetarian</option>
       <option value="Vegan">Vegan</option>
       <option value="None">None</option>
     </select>
-    <p>Do you have any food allergies or intolerances?</p>
-    <input type="text" id="allergiesInput" placeholder="Allergies/Intolerances" data-label="Allergies/Intolerances" data-step="3">
-    <p>What are your favorite healthy foods?</p>
-    <input type="text" id="favoriteFoodsInput" placeholder="Your Favorite food" data-label="Favorite Food" data-step="3">
-    <div class="button-container">
-      <button class="back-button" onclick="previousStep()">Back</button>
-      <button class="next-button" onclick="nextStep()">Next</button>
+        <p>Do you have any food allergies or intolerances?</p>
+        <input type="text" id="allergiesInput" placeholder="Allergies/Intolerances" data-label="Allergies/Intolerances" data-step="3">
+        <p>What are your favorite healthy foods?</p>
+        <input type="text" id="favoriteFoodsInput" placeholder="Your Favorite food" data-label="Favorite Food" data-step="3">
+        <div class="button-container">
+            <button class="back-button" onclick="previousStep()">Back</button>
+            <button class="next-button" onclick="nextStep()">Next</button>
+        </div>
     </div>
-  </div>
 
-  <div class="prompt" style="display: none;">
-    <p>How would you rate your current stress level?</p>
-    <input type="text" id="stressLevelInput" placeholder="In a scale of 1 to 10" data-label="In a scale of 1 to 10" data-step="4">
-    <p>Are you interested in mindfulness or meditation practices?</p>
-    <input type="text" id="meditationInterestInput" placeholder="Mindfulness/Meditation Interest" data-label="Mindfulness/Meditation Interest" data-step="4">
-    <p>What are your main goals related to health and well-being?</p>
-    <input type="text" id="goalsInput" placeholder="Health Goals" data-label="Health Goals" data-step="4">
-    <div class="button-container">
-      <button class="back-button" onclick="previousStep()">Back</button>
-      <button class="next-button" onclick="nextStep()">Next</button>
+    <div class="prompt" style="display: none;">
+        <p>How would you rate your current stress level?</p>
+        <input type="text" id="stressLevelInput" placeholder="In a scale of 1 to 10" data-label="In a scale of 1 to 10" data-step="4">
+        <p>Are you interested in mindfulness or meditation practices?</p>
+        <input type="text" id="meditationInterestInput" placeholder="Mindfulness/Meditation Interest" data-label="Mindfulness/Meditation Interest" data-step="4">
+        <p>What are your main goals related to health and well-being?</p>
+        <input type="text" id="goalsInput" placeholder="Health Goals" data-label="Health Goals" data-step="4">
+        <div class="button-container">
+            <button class="back-button" onclick="previousStep()">Back</button>
+            <button class="next-button" onclick="nextStep()">Next</button>
+        </div>
     </div>
-  </div>
 
-  <div class="prompt" style="display: none;">
-    <p>Thank you for providing your information!</p>
-  </div>
+    <div class="prompt" style="display: none;">
+        <p>Thank you for providing your information!</p>
+    </div>
 
-  <script src="user_profile.js" defer></script>
+    <script src="user_profile.js" defer></script>
 
 </body>
+
 </html>
-
-
