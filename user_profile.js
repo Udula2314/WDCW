@@ -1,8 +1,9 @@
 let currentStep = 1;
-const totalSteps = 4;
+const totalSteps = 5;
 const prompts = document.querySelectorAll('.prompt');
 const progressBar = document.querySelector('.progress');
 const stepIndicator = document.querySelector('.step-indicator');
+const profileCompletionText = document.querySelector('.profile-completion-text');
 
 function nextStep() {
     if (currentStep === 1 && !validateStep1Inputs()) {
@@ -19,6 +20,7 @@ function nextStep() {
         updateProgress();
         displayUserDetails();
         updateStepIndicator();
+        updateProfileCompletionText();
     } else {
         // Process the collected information here
         const firstName = document.getElementById('firstNameInput').value;
@@ -35,6 +37,7 @@ function nextStep() {
 
         // Display thank you message
         document.querySelector('.prompt:last-of-type').style.display = 'block';
+        updateProfileCompletionText();
     }
 }
 
@@ -47,6 +50,7 @@ function previousStep() {
         updateProgress();
         displayUserDetails();
         updateStepIndicator();
+        updateProfileCompletionText();
     } else {
         currentStep = 1; // Ensure currentStep does not go below 1
     }
@@ -84,3 +88,9 @@ function validateStep1Inputs() {
     }
     return true; // All step 1 inputs are filled
 }
+
+function updateProfileCompletionText() {
+    const progress = (currentStep - 1) / totalSteps * 100;
+    profileCompletionText.textContent = `Profile completed ${progress}%`;
+}
+
