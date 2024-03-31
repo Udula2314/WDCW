@@ -1,86 +1,114 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: Arial;
     background-image: url("background4.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  /* The grid: Four equal columns that float next to each other */
-  .column {
+}
+
+
+/* The grid: Four equal columns that float next to each other */
+
+.column {
     float: left;
     width: 25%;
     padding: 10px;
-    height: 250px; /* Set a fixed height for all images */
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-    width: 100%; /* Ensure images take up the full width of the container */
-    height: 100%; /* Ensure images take up the full height of the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
-  }
-  
-  .column img:hover {
+    height: 250px;
+    /* Set a fixed height for all images */
+}
+
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    /* Ensure images take up the full width of the container */
+    height: 100%;
+    /* Ensure images take up the full height of the container */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire space */
+}
+
+.column img:hover {
     opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-    background-image: url('background.jpg'); /* Add background image to the gallery view */
-    background-size: cover; /* Ensure the background image covers the entire space */
-  }
-  
-  /* The expanding image container */
-  .container {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    background-image: url('background.jpg');
+    /* Add background image to the gallery view */
+    background-size: cover;
+    /* Ensure the background image covers the entire space */
+}
+
+
+/* The expanding image container */
+
+.container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-  }
-  
-  /* Expanded image */
-  .expanded-image {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
+}
+
+
+/* Expanded image */
+
+.expanded-image {
     display: block;
     margin: auto;
     max-width: 80%;
     max-height: 80%;
-  }
-  
-  /* Close button */
-  .closebtn {
+}
+
+
+/* Close button */
+
+.closebtn {
     position: absolute;
     top: 15px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     cursor: pointer;
-  }
-  
-  .closebtn:hover,
-  .closebtn:focus {
+}
+
+.closebtn:hover,
+.closebtn:focus {
     color: #f44336;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Banner */
-  .banner {
+}
+
+
+/* Banner */
+
+.banner {
     width: 100%;
     display: block;
-  }
+}
