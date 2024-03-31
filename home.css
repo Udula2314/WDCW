@@ -53,7 +53,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: var(--second-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,23 +95,8 @@ header.shrink {
     margin-left: 84px;
 }
 
-.main-menu>li>a:hover,
-.user-menu>li>a:hover {
+.main-menu>li>a:hover {
     color: var(--txt-white);
-}
-
-.user-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.user-menu>li>a>i {
-    font-size: 1.5rem;
-}
-
-.user-menu>li~li {
-    margin-left: 20px;
 }
 
 .hero {
