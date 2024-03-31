@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./logo.png" />
     <link rel="stylesheet" href="./gallery.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Healthy Life</title>
+    <link rel="icon" href="./logo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./home.css" />
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Logo" style="width: 65px; height: 65px" />
+        </a>
+        <div class="main-menu-wrapper">
+            <ul class="main-menu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Comments</a></li>
+            </ul>
+        </div>
+
+        <a style="cursor: pointer;" href="user_profile.html">
+            <div>
+                <img src="profile-user.png" alt="User Profile" style="width: 45px; height: 45px;" />
+            </div>
+
+        </a>
+    </header>
+    <!-- end header -->
 
     <!-- Banner -->
     <img src="background.png" alt="Background" class="banner">
@@ -102,6 +134,62 @@
         <div id="imgtext" style="color: white; font-size: 18px; text-align: center; margin-top: 10px;"></div>
     </div>
     <script src="gallery.js"></script>
+
+    <!-- footer section -->
+    <footer>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="logo">
+                        <img src="./logo.png" alt="Logo" width="75px" height="75px" />
+                    </a>
+                    <p class="footer-description">
+                        Well-being is a feeling of satisfaction with life, a state characterized by health, happiness, and prosperity. Good health concerns the care of the human body and everything that can be done to protect it from sickness and intoxication and enable access
+                        to care.
+                    </p>
+                    <ul class="socials">
+                        <li>
+                            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bx bxl-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Comments</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="footer-header">news letter</h3>
+                    <p class="footer-description">
+                        Subscribe with your email to let us know about your health.
+                    </p>
+                    <div class="subscribe-form">
+                        <input type="text" name="" placeholder="Your Email..." />
+                        <button style="background-color: #e0cc16;" class="btn1">subscribe now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
 </body>
 
 </html>
