@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <br><br><br><br>
-  
+    <br><br><br><br>
+
     <h1>Create Your User Profile</h1>
 
     <div class="progress-bar-container">
@@ -19,9 +19,13 @@
             <div class="progress"></div>
         </div>
         <div class="step-indicator">Step 1 of 4</div>
+        <div class="step-indicator" style="display: none;">Step 2 of 4</div>
+        <div class="step-indicator" style="display: none;">Step 3 of 4</div>
+        <div class="step-indicator" style="display: none;">Step 4 of 4</div>
     </div>
-    
-    <div class="profile-completion-text"></div> <!-- New element for profile completion text -->
+
+    <div class="profile-completion-text"></div>
+    <!-- New element for profile completion text -->
 
     <div class="prompt">
         <p>Enter your first name:</p>
@@ -38,21 +42,21 @@
     </div>
 
     <div class="prompt" style="display: none;">
-      <p>How often do you engage in physical activity per week?</p>
-      <input type="text" id="activityInput" placeholder="Eg: Once/twice a day/week" data-label="Eg: Once/twice a day/week" data-step="2">
-      <p>What types of physical activities do you enjoy the most?</p>
-    <div class="checkbox-container">
-        <input type="checkbox" id="yogaCheckbox" value="Yoga" data-step="2">
-        <label for="yogaCheckbox">Yoga</label><br>
-        <input type="checkbox" id="weightliftingCheckbox" value="Weight Lifting" data-step="2">
-        <label for="weightliftingCheckbox">Weight Lifting</label><br>
-        <input type="checkbox" id="runningCheckbox" value="Running" data-step="2">
-        <label for="runningCheckbox">Running</label><br>
-        <input type="checkbox" id="dancingCheckbox" value="Dancing" data-step="2">
-        <label for="dancingCheckbox">Dancing</label><br>
-        <input type="checkbox" id="joggingCheckbox" value="Jogging" data-step="2">
-        <label for="joggingCheckbox">Jogging</label><br>
-    </div>
+        <p>How often do you engage in physical activity per week?</p>
+        <input type="text" id="activityInput" placeholder="Eg: Once/twice a day/week" data-label="Eg: Once/twice a day/week" data-step="2">
+        <p>What types of physical activities do you enjoy the most?</p>
+        <div class="checkbox-container">
+            <input type="checkbox" id="yogaCheckbox" value="Yoga" data-step="2">
+            <label for="yogaCheckbox">Yoga</label><br>
+            <input type="checkbox" id="weightliftingCheckbox" value="Weight Lifting" data-step="2">
+            <label for="weightliftingCheckbox">Weight Lifting</label><br>
+            <input type="checkbox" id="runningCheckbox" value="Running" data-step="2">
+            <label for="runningCheckbox">Running</label><br>
+            <input type="checkbox" id="dancingCheckbox" value="Dancing" data-step="2">
+            <label for="dancingCheckbox">Dancing</label><br>
+            <input type="checkbox" id="joggingCheckbox" value="Jogging" data-step="2">
+            <label for="joggingCheckbox">Jogging</label><br>
+        </div>
         <p>Do you have any injuries that affect your ability to exercise?</p>
         <input type="text" id="injuriesInput" placeholder="Yes/No" data-label="Injuries" data-step="2">
         <div class="button-container">
@@ -100,4 +104,3 @@
 </body>
 
 </html>
-
