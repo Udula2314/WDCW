@@ -1,53 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Details</title>
-  <link rel="stylesheet" href="team.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="icon" href="./logo.png">
+    <!-- css -->
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="team.css">
 </head>
+
 <body>
-  <br>
-  <h1>Student Details</h1>
-  <p>About Us - Hover over the images for details!</p>
-  <br><br><br>
-  <div class="team-members">
-    <div class="team-member">
-      <img src="Male1.jpg" alt="Student 1" class="thumbnail">
-      <div class="details">
-        <b><p>Udula Jayasekara</p>
-        <p>Role student 1</p>
-        <p>Designed splash screen and shop.</p></b>
-        <p>User profile | Team</p>
-      </div>
-    </div>
-    <div class="team-member">
-      <img src="Male2.jpg" alt="Student 2" class="thumbnail">
-      <div class="details">
-        <b><p>Thejan Paranagama</p>
-        <p>Role student 2</p>
-        <p>Implemented home page and feedback page.</p></b>
-        <p>User profile | Team</p>
-      </div>
-    </div>
-    <div class="team-member">
-      <img src="Female1.jpg" alt="Student 3" class="thumbnail">
-      <div class="details">
-        <b><p>Sathnara Perera</p>
-        <p>Role student 3</p>
-        <p>Designed user profile and team page.</p></b>
-        <p>User profile | Team</p>
-      </div>
-    </div>
-    <div class="team-member">
-      <img src="Female2.jpg" alt="Student 4" class="thumbnail">
-      <div class="details">
-        <b><p>Piyumi Gunasekara</p>
-        <p>Role student 4</p>
-        <p>Implemented gallery and sitemap.</p></b>
-        <p>User profile | Team</p>
-      </div>
-    </div>
-  </div>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="./logo.png" alt="Logo" style="width: 65px; height: 65px">
+        </a>
+        <div class="main-menu-wrapper">
+            <ul class="main-menu">
+                <li>
+                    <a href="home.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Site Map</a>
+                </li>
+                <li>
+                    <a href="#">Comments</a>
+                </li>
+            </ul>
+        </div>
+        <a style="cursor: pointer;" href="user_profile.html">
+            <div>
+                <img src="profile-user.png" style="width: 45px; height: 45px;" />
+            </div>
+        </a>
+    </header>
+    <!-- end header -->
+    <!-- category section -->
+    <div class="hero">
+
+        <div class="slide-container1" id="hero-slide">
+            <ul class="slide-control">
+                <li class="slide-prev"><i class="bx bx-chevron-left"></i></li>
+                <li class="slide-control-item active"></li>
+                <li class="slide-control-item"></li>
+                <li class="slide-control-item"></li>
+                <li class="slide-next"><i class="bx bx-chevron-right"></i></li>
+            </ul>
+            <!-- end slide control -->
+        </div>
+
+        <div class="col-12" style="background-color: white; font-family: Arial, sans-serif; height: 820px; padding: 10px; margin-top: 100px;">
+
+            <br>
+            <h1 style="text-align: center;">Student Details</h1>
+            <p style="text-align: center;">About Us - Hover over the images for details!</p>
+            <br><br><br>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="Male1.jpg" alt="Student 1" class="thumbnail">
+                    <div class="details">
+                        <b><p>Udula Jayasekara</p>
+                  <p>Role student 1</p>
+                  <p>Designed splash screen and shop.</p></b>
+                        <p>User profile | Team</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Male2.jpg" alt="Student 2" class="thumbnail">
+                    <div class="details">
+                        <b><p>Thejan Paranagama</p>
+                  <p>Role student 2</p>
+                  <p>Implemented home page and feedback page.</p></b>
+                        <p>User profile | Team</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Female1.jpg" alt="Student 3" class="thumbnail">
+                    <div class="details">
+                        <b><p>Sathnara Perera</p>
+                  <p>Role student 3</p>
+                  <p>Designed user profile and team page.</p></b>
+                        <p>User profile | Team</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="Female2.jpg" alt="Student 4" class="thumbnail">
+                    <div class="details">
+                        <b><p>Piyumi Gunasekara</p>
+                  <p>Role student 4</p>
+                  <p>Implemented gallery and sitemap.</p></b>
+                        <p>User profile | Team</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end category section -->
+        <!-- footer section -->
+        <footer>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#" class="logo">
+                            <img src="./logo.png" alt="Logo" width="75px" height="75px">
+                        </a>
+                        <p class="footer-description">
+                            Well-being is a feeling of satisfaction with life, a state characterized by health, happiness, and prosperity. Good health concerns the care of the human body and everything that can be done to protect it from sickness and intoxication and enable access
+                            to care.
+                        </p>
+                        <ul class="socials">
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-facebook-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bx bxl-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#">Site Map</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#">Comments</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">FeedBack</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="footer-header">news letter</h3>
+                        <p class="footer-description">
+                            Subscribe with your email to let us know about your health.
+                        </p>
+                        <div class="subscribe-form">
+                            <input type="text" name="" placeholder="Your Email...">
+                            <button style="background-color: #e0cc16;" class="btn1">Subscribe now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer section -->
+        <script src="home.js"></script>
 </body>
+
 </html>
