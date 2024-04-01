@@ -110,6 +110,11 @@ header.shrink {
     position: relative;
 }
 
+.slide-container1 {
+    height: 100%;
+    position: relative;
+}
+
 .slide {
     display: flex;
     height: 0;
