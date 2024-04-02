@@ -33,129 +33,57 @@ window.addEventListener('scroll', function() {
   });
 
 
-  const next1=document.getElementById('next1');
-  const prev1=document.getElementById('prev1');
-  const images1=document.getElementById('scroller1');
-  let current_card1=0;
+  function setupSlider(nextBtnId, prevBtnId, imagesContainerId) {
+    const nextBtn = document.getElementById(nextBtnId);
+    const prevBtn = document.getElementById(prevBtnId);
+    const imagesContainer = document.getElementById(imagesContainerId);
+    let currentCard = 0;
+  
+    nextBtn.addEventListener('click', () => {
+      if (currentCard < imagesContainer.children.length ) {
+        currentCard++;
+        imagesContainer.style.transitionDuration = "0.5s";
+        imagesContainer.style.transform = `translate(-${currentCard * 200}px)`;
+      }
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      if (currentCard > 0) {
+        currentCard--;
+        imagesContainer.style.transitionDuration = "0.5s";
+        imagesContainer.style.transform = `translate(-${currentCard * 100}px)`;
+      }
+    });
+  }
+  
+  // Call setupSlider for each slider
+  setupSlider('next1', 'prev1', 'scroller1');
+  setupSlider('next2', 'prev2', 'scroller2');
+  setupSlider('next3', 'prev3', 'scroller3');
+  setupSlider('next4', 'prev4', 'scroller4');
+  setupSlider('next5', 'prev5', 'scroller5');
+  setupSlider('next6', 'prev6', 'scroller6');
+  setupSlider('next7', 'prev7', 'scroller7');
 
-  next1.addEventListener('click', ()=>{
-    if(current_card1<images.children.length-0.5){
+// script.js
 
-    current_card1++;
-    images1.style.transitionDuration="0.5s";
-    images1.style.transform = `translate(-${current_card1 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
+function updateDetails(quantity, elementId) {
+  var vegNameElement = document.getElementById('vegN' + elementId);
+  var vegPriceElement = document.getElementById('vegP' + elementId);
+  var pricePer100g = parseFloat(vegPriceElement.innerText.split(':')[1]);
+  
+  if (quantity === '100g') {
+      vegNameElement.innerText = '(100g)';
+      vegPriceElement.innerText = 'LKR:' + '250';
+  } else if (quantity === '250g') {
+      vegNameElement.innerText = '(250g)';
+      vegPriceElement.innerText = 'LKR:' + '500';
+  } else if (quantity === '500g') {
+      vegNameElement.innerText = '(500g)';
+      vegPriceElement.innerText = 'LKR:' + '1000';
+  }
+}
 
-  }); 
-  prev1.addEventListener('click', ()=>{
-    if(current_card1>0){
-
-    current_card1--;
-    images1.style.transitionDuration="0.5s";
-    images1.style.transform = `translate(-${current_card1 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  });
-  const next2=document.getElementById('next2');
-  const prev2=document.getElementById('prev2');
-  const images2=document.getElementById('scroller2');
-  let current_card2=0;
-
-  next2.addEventListener('click', ()=>{
-    if(current_card2<images2.children.length-0.5){
-
-    current_card2++;
-    images2.style.transitionDuration="0.5s";
-    images2.style.transform = `translate(-${current_card2 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  }); 
-  prev2.addEventListener('click', ()=>{
-    if(current_card2>0){
-
-    current_card2--;
-    images2.style.transitionDuration="0.5s";
-    images2.style.transform = `translate(-${current_card2 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  });
-  const next3=document.getElementById('next3');
-  const prev3=document.getElementById('prev3');
-  const images3=document.getElementById('scroller3');
-  let current_card3=0;
-
-  next3.addEventListener('click', ()=>{
-    if(current_card3<images3.children.length-0.5){
-
-    current_card3++;
-    images3.style.transitionDuration="0.5s";
-    images3.style.transform = `translate(-${current_card3 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  }); 
-  prev3.addEventListener('click', ()=>{
-    if(current_card3>0){
-
-    current_card3--;
-    images3.style.transitionDuration="0.5s";
-    images3.style.transform = `translate(-${current_card3 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  });
-  const next4=document.getElementById('next4');
-  const prev4=document.getElementById('prev4');
-  const images4=document.getElementById('scroller4');
-  let current_card4=0;
-
-  next4.addEventListener('click', ()=>{
-    if(current_card4<images4.children.length-0.5){
-
-    current_card4++;
-    images4.style.transitionDuration="0.5s";
-    images4.style.transform = `translate(-${current_card4 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  }); 
-  prev4.addEventListener('click', ()=>{
-    if(current_card4>0){
-
-    current_card4--;
-    images4.style.transitionDuration="0.5s";
-    images4.style.transform = `translate(-${current_card4 * 100}px)`;
-    }
-    else{
-        return
-    }
-    
-
-  });
+  
 
   
