@@ -163,7 +163,7 @@
 .scroller{
     display: flex;
     overflow-x: auto; /* Enable horizontal scroll if content overflows */
-    width:200%; /* Ensure the row takes up the full width */
+    width:180%; /* Ensure the row takes up the full width */
     align-items: center;
     
     
@@ -257,12 +257,12 @@ header.shrink {
     background-color: var(--second-color);
 }
 
-.item:hover .hover-product {
+.item1:hover .hover-product {
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
 }
-.item:hover .food-items{
+.item1:hover .food-items{
     filter: blur(2px);
 }
 .labelOrder {
@@ -316,10 +316,13 @@ header.shrink {
 
 .cart_img{
     width:100%;
+    position: relative;
+    margin-top: -50%;
     
    
 }
 .cart_image{
+    
     width:6%;
    
 
@@ -341,6 +344,9 @@ header.shrink {
 /* Class to be added for showing the cart */
 .cart-visible {
     right:0%;
+}
+.cart-Close{
+    right:-100%;
 }
     
   
@@ -454,7 +460,14 @@ header.shrink {
   #backImg{
     margin-bottom:-8%;
   }
+#cartBadge{
+   font-size:xx-large;
+    color: Red;
+    margin-Left:0;
+    margin-top: 100%;
+    z-index: 1;;
 
+}
 
 
 

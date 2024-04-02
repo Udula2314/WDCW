@@ -40,9 +40,9 @@ window.addEventListener('scroll', function() {
     let currentCard = 0;
   
     nextBtn.addEventListener('click', () => {
-      if (currentCard < imagesContainer.children.length ) {
+      if (currentCard < imagesContainer.children.length) {
         currentCard++;
-        imagesContainer.style.transitionDuration = "0.5s";
+        imagesContainer.style.transitionDuration = "0.7s";
         imagesContainer.style.transform = `translate(-${currentCard * 200}px)`;
       }
     });
@@ -50,8 +50,8 @@ window.addEventListener('scroll', function() {
     prevBtn.addEventListener('click', () => {
       if (currentCard > 0) {
         currentCard--;
-        imagesContainer.style.transitionDuration = "0.5s";
-        imagesContainer.style.transform = `translate(-${currentCard * 100}px)`;
+        imagesContainer.style.transitionDuration = "0.7s";
+        imagesContainer.style.transform = `translate(-${currentCard * 200}px)`;
       }
     });
   }
@@ -74,16 +74,94 @@ function updateDetails(quantity, elementId) {
   
   if (quantity === '100g') {
       vegNameElement.innerText = '(100g)';
-      vegPriceElement.innerText = 'LKR:' + '250';
+      vegPriceElement.innerText =  '250';
   } else if (quantity === '250g') {
       vegNameElement.innerText = '(250g)';
-      vegPriceElement.innerText = 'LKR:' + '500';
+      vegPriceElement.innerText = '500';
   } else if (quantity === '500g') {
       vegNameElement.innerText = '(500g)';
-      vegPriceElement.innerText = 'LKR:' + '1000';
+      vegPriceElement.innerText =  '1000';
+      
   }
 }
 
-  
+// Add event listeners to all "Add to Cart" buttons
+
+  // Select all elements with the class 'button-text'
+  var addToCartButtons = document.querySelectorAll('.button-text');
 
   
+  addToCartButtons.forEach(function(button) {
+    console.log('Hi')
+      // Add a 'click' event listener to each button, calling the addToCart function when clicked
+      button.addEventListener('click', addToCart,);
+  });
+  
+
+
+// Function to add product to the cart
+function addToCart(event) {
+  var productContainer = event.target.closest('.item1');
+  var productId = productContainer.getAttribute('id');
+  var productName = productContainer.querySelector(`#${productId} h3`).innerText;
+  // Corrected the id used in the selector for the radio button
+  var productQuantity = productContainer.querySelector(`#${productId} input[name="Quantity"]:checked`).value;
+  var productPrice = parseFloat(productContainer.querySelector(`#${productId} #vegP${productId.charAt(3)}`).innerText);
+  
+
+  var product = {
+      name: productName,
+      quantity: productQuantity,
+      price: productPrice
+  };
+
+  // Call function to add product to the cart
+  addProductToCart(product);
+  
+}
+
+// Function to add product to the cart
+function addProductToCart(product) {
+    var cartBody = document.querySelector('.cart_body');
+    var cartTotal = document.querySelector('.cardfooter p');
+    var cartTotalValue = parseFloat(cartTotal.innerText.replace('Rs.', '')); // Remove 'Rs.' and convert to float
+
+    // Create new cart item element
+    var cartItem = document.createElement('div');
+    cartItem.classList.add('cart_item');
+    cartItem.innerHTML = `
+        <p>${product.name} - ${product.quantity}</p>
+        <p>Rs.${product.price }</p>
+    `;
+    cartBody.appendChild(cartItem);
+
+    // Update total
+    cartTotalValue += (product.price );
+    cartTotal.innerText = 'Rs.' + cartTotalValue.toFixed(2);
+}
+
+// Close cart functionality
+var closeCartButton = document.getElementById('closeCart');
+closeCartButton.addEventListener('click', function() {
+    var cart = document.getElementById('cart');
+    cart.style.display = 'none';
+});
+
+// Place order functionality
+var placeOrderButton = document.querySelector('.place_order');
+placeOrderButton.addEventListener('click', function() {
+    // Implement order placement logic here
+    // You can send the cart items to a server or display a confirmation message, etc.
+    alert('Your order has been placed!');
+    clearCart();
+});
+function clearCart() {
+  var cartBody = document.querySelector('.cart_body');
+  var cartTotal = document.querySelector('.cardfooter p');
+
+  // Remove all cart items
+  cartBody.innerHTML = '';
+
+  // Reset total to 0
+  cartTotal.innerText = 'Rs.0';
+}
