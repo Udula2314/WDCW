@@ -45,11 +45,12 @@ function nextStep() {
 
 function previousStep() {
     prompts[currentStep - 1].style.display = 'none';
+    st[currentStep - 1].style.display = 'none';
     currentStep--;
 
     if (currentStep >= 1) {
         prompts[currentStep - 1].style.display = 'block';
-        
+        st[currentStep - 1].style.display = 'block';
 
         updateProgress();
         displayUserDetails();
