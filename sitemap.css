@@ -1,27 +1,33 @@
-.main{
-	padding-top: 1.5em;
+.main {
+    padding-top: 1.5em;
 }
-.box{
+
+.box {
     fill: tan;
-    stroke: #A9A9A9; 
-    stroke-width:6;
+    stroke: #A9A9A9;
+    stroke-width: 6;
     cursor: pointer;
 }
-.box:hover{
-	fill: #FFFFE0;
+
+.box:hover {
+    fill: #FFFFE0;
 }
-.text{
+
+.text {
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     font-size: 19px;
 }
-.line{
-    stroke:black;
+
+.line {
+    stroke: black;
     stroke-width: 7;
 }
-.circle{
-	stroke: #696969;
-	stroke-width:4;
+
+.circle {
+    stroke: #696969;
+    stroke-width: 4;
 }
-.circle:hover{
-	fill: #8FBC8F;
+
+.circle:hover {
+    fill: #8FBC8F;
 }

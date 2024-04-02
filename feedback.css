@@ -9,13 +9,13 @@
 }
 
 :root {
-    --main-color: #328F12;
+    --main-color: #ffffff;
     --second-color: #34ac1d;
     --btn-color1: #e01616;
     --txt-color: #bbbbbb;
     --txt-white: #ffffff;
     --bg-black: #000;
-    --bg: #fcfcfc;
+    --bg: #ffffff;
     --header-height: 144px;
     --header-padding: 93px;
 }
