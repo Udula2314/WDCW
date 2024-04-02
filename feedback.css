@@ -15,6 +15,7 @@
     --txt-color: #bbbbbb;
     --txt-white: #ffffff;
     --bg-black: #000;
+    --bg: #fcfcfc;
     --header-height: 144px;
     --header-padding: 93px;
 }
@@ -27,7 +28,7 @@
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: var(--bg);
     color: var(--txt-color);
     font-family: MyriadProCondensed, sans-serif;
     overflow-x: hidden;
@@ -111,7 +112,7 @@ header.shrink {
 }
 
 .slide-container1 {
-    height: 0;
+    height: 0%;
     position: relative;
 }
 

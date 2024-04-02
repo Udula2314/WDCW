@@ -1,51 +1,57 @@
-
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-
 h1 {
-  color: #000000;
+    color: #000000;
 }
 
 .prompt {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .prompt input {
-  padding: 5px;
-  font-size: 16px;
-  margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .next-button,
 .back-button {
-  padding: 5px 10px;
-  font-size: 16px;
+    padding: 5px 10px;
+    font-size: 16px;
 }
 
 .progress-bar-container {
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .progress-bar {
-  display: inline-block;
-  width: 50%; /* Adjust as needed */
-  height: 20px; /* Adjust as needed */
-  background-color: #f0f0f0; /* Adjust as needed */
-  border-radius: 10px; /* Adjust as needed */
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
 }
 
 .progress {
-  width: 0%;
-  height: 100%;
-  background-color: green;
-  border-radius: 10px; /* Adjust as needed */
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
 }
 
 .step-indicator {
-  margin-top: 10px;
-  font-size: 16px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.checkbox-container {
+    text-align: left;
+    text-align: center;
+    color: #000000;
+}
+
+#dietPlanInput {
+    width: 110px;
+    padding: 5px;
+    font-size: 15px;
 }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./logo.png" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Healthy Life</title>
+    <link rel="icon" href="./logo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./home.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Logo" style="width: 65px; height: 65px" />
+        </a>
+        <div class="main-menu-wrapper">
+            <ul class="main-menu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Comments</a></li>
+            </ul>
+        </div>
+
+        <a style="cursor: pointer;" href="user_profile.html">
+            <div>
+                <img src="profile-user.png" alt="User Profile" style="width: 45px; height: 45px;" />
+            </div>
+
+        </a>
+    </header>
+    <!-- end header -->
+
+    <!-- Banner -->
+    <img src="background.png" alt="Background" class="banner">
+
+    <div style="text-align:center">
+        <h2>Image Gallery</h2>
+        <p>Click on the images below:</p>
+    </div>
+
+    <!-- Fitness category -->
+    <h3 style="text-align:center;">Fitness</h3>
+    <div class="row">
+        <div class="column">
+            <img src="fitness1.jpg" alt="Fitness" onclick="myFunction(this, 'Regular Exercises to maintain the fitness');">
+        </div>
+        <div class="column">
+            <img src="fitness2.jpg" alt="Fitness" onclick="myFunction(this, 'Morning jogs to improve both Physical and Mental health');">
+        </div>
+        <div class="column">
+            <img src="fitness3.avif" alt="Fitness" onclick="myFunction(this, 'Daily Workouts for consistency');">
+        </div>
+        <div class="column">
+            <img src="fitness4.webp" alt="Fitness" onclick="myFunction(this, 'Home workouts and yoga');">
+        </div>
+    </div>
+
+    <!-- Healthy Food category -->
+    <h3 style="text-align:center;">Healthy Food</h3>
+    <div class="row">
+        <div class="column">
+            <img src="food1.jpeg" alt="food" onclick="myFunction(this,'A meal enriched with nutritious food, fruits and vegetables');">
+        </div>
+        <div class="column">
+            <img src="food2.jpeg" alt="food" onclick="myFunction(this, 'Consume more fresh fruits');">
+        </div>
+        <div class="column">
+            <img src="food3.jpeg" alt="food" onclick="myFunction(this, 'Focus on all kinds of nutritions');">
+        </div>
+        <div class="column">
+            <img src="food4.jpeg" alt="food" onclick="myFunction(this, 'Try to eat healthy snacks like cereals with fruits');">
+        </div>
+        <div class="column">
+            <img src="food5.jpg" alt="food" onclick="myFunction(this, 'Multivitamins makes a huge positive impact');">
+        </div>
+        <div class="column">
+            <img src="food6.jpg" alt="food" onclick="myFunction(this, 'Multivitamins makes a huge positive impact');">
+        </div>
+        <div class="column">
+            <img src="food7.jpeg" alt="food" onclick="myFunction(this, 'Eat more fresh food');">
+        </div>
+        <div class="column">
+            <img src="avoidalcohol.jpg" alt="food" onclick="myFunction(this, 'Reduce alcohol and smoke consumption');">
+        </div>
+    </div>
+
+    <!-- Mental Health category -->
+    <h3 style="text-align:center;">Mental Health</h3>
+    <div class="row">
+        <div class="column">
+            <img src="mentalhealth1.png" alt="mental health" onclick="myFunction(this, 'Meditation is the key for mental health');">
+        </div>
+        <div class="column">
+            <img src="mentalhelath2.jpg" alt="mental health" onclick="myFunction(this, 'Maintain mindfulness and focus');">
+        </div>
+        <div class="column">
+            <img src="mentalhealth3.webp" alt="mental health" onclick="myFunction(this, 'Get professional help in need');">
+        </div>
+        <div class="column">
+            <img src="mentalhealth4.jpg" alt="mental health" onclick="myFunction(this, 'Practice mindfulness on your own');">
+        </div>
+        <div class="column">
+            <img src="mentalhealth5.jpeg" alt="mental health" onclick="myFunction(this, 'Connect with the nature for a peaceful mindset');">
+        </div>
+        <div class="column">
+            <img src="doctorvisits.webp" alt="mental health" onclick="myFunction(this, 'Regular doctor visits to ensure your health');">
+        </div>
+        <div class="column">
+            <img src="doctorvisits2.jpeg" alt="mental health" onclick="myFunction(this, 'Regular checkups to ensure your health');">
+        </div>
+        <div class="column">
+            <img src="sleep.jpg" alt="mental health" onclick="myFunction(this, 'Good sleep is a must for mental as well as physical health');">
+        </div>
+    </div>
+
+    <!-- The expanded image container -->
+    <div id="myModal" class="container">
+        <!-- Close button -->
+        <span class="closebtn" onclick="closeModal()">&times;</span>
+        <!-- Expanded image -->
+        <img class="expanded-image" id="expandedImg">
+        <!-- Image description -->
+        <div id="imgtext" style="color: white; font-size: 18px; text-align: center; margin-top: 10px;"></div>
+    </div>
+    <script src="gallery.js"></script>
+
+    <!-- footer section -->
+    <footer>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#" class="logo">
+                        <img src="./logo.png" alt="Logo" width="75px" height="75px" />
+                    </a>
+                    <p class="footer-description">
+                        Well-being is a feeling of satisfaction with life, a state characterized by health, happiness, and prosperity. Good health concerns the care of the human body and everything that can be done to protect it from sickness and intoxication and enable access
+                        to care.
+                    </p>
+                    <ul class="socials">
+                        <li>
+                            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bx bxl-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bx bxl-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#">Comments</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="footer-header">news letter</h3>
+                    <p class="footer-description">
+                        Subscribe with your email to let us know about your health.
+                    </p>
+                    <div class="subscribe-form">
+                        <input type="text" name="" placeholder="Your Email..." />
+                        <button style="background-color: #e0cc16;" class="btn1">subscribe now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+</body>
+
+</html>

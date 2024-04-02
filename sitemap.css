@@ -1,0 +1,27 @@
+.main{
+	padding-top: 1.5em;
+}
+.box{
+    fill: tan;
+    stroke: #A9A9A9; 
+    stroke-width:6;
+    cursor: pointer;
+}
+.box:hover{
+	fill: #FFFFE0;
+}
+.text{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 19px;
+}
+.line{
+    stroke:black;
+    stroke-width: 7;
+}
+.circle{
+	stroke: #696969;
+	stroke-width:4;
+}
+.circle:hover{
+	fill: #8FBC8F;
+}

@@ -1,26 +1,31 @@
 let currentStep = 1;
 const totalSteps = 4;
 const prompts = document.querySelectorAll('.prompt');
+const st = document.querySelectorAll('.step-indicator');
 const progressBar = document.querySelector('.progress');
 const stepIndicator = document.querySelector('.step-indicator');
+const profileCompletionText = document.querySelector('.profile-completion-text');
 
 function nextStep() {
     if (currentStep === 1 && !validateStep1Inputs()) {
         alert('Please fill out all fields before proceeding.');
         return;
     }
-    
+
     prompts[currentStep - 1].style.display = 'none';
+    st[currentStep - 1].style.display = 'none';
     currentStep++;
 
     if (currentStep <= totalSteps) {
         prompts[currentStep - 1].style.display = 'block';
-        
+        st[currentStep - 1].style.display = 'block';
+
         updateProgress();
         displayUserDetails();
         updateStepIndicator();
+        updateProfileCompletionText();
     } else {
-        // Process the collected information here
+        // Processing the collected information 
         const firstName = document.getElementById('firstNameInput').value;
         const surname = document.getElementById('surnameInput').value;
         const age = document.getElementById('ageInput').value;
@@ -31,10 +36,10 @@ function nextStep() {
         console.log('Age:', age);
         console.log('Email:', email);
 
-        // You can send this data to a server or perform any other desired action
 
-        // Display thank you message
+        // Display a thank you message
         document.querySelector('.prompt:last-of-type').style.display = 'block';
+        updateProfileCompletionText();
     }
 }
 
@@ -44,11 +49,14 @@ function previousStep() {
 
     if (currentStep >= 1) {
         prompts[currentStep - 1].style.display = 'block';
+        
+
         updateProgress();
         displayUserDetails();
         updateStepIndicator();
+        updateProfileCompletionText();
     } else {
-        currentStep = 1; // Ensure currentStep does not go below 1
+        currentStep = 1; // This Ensures currentStep does not go below 1
     }
 }
 
@@ -83,4 +91,9 @@ function validateStep1Inputs() {
         }
     }
     return true; // All step 1 inputs are filled
+}
+
+function updateProfileCompletionText() {
+    const progress = (currentStep - 1) / totalSteps * 100;
+    profileCompletionText.textContent = `Profile completed ${progress}%`;
 }
