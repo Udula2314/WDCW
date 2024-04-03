@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="shop.css">
 </head>
-
 <body>
-
     <div class="cart" id="cart">
         <div class="cart_name">
             <h1 id="closeCart">X</h1>
             <H3>Your Cart</H3>
         </div>
         <div class="cart_body">
-
         </div>
         <div class="cardfooter">
             <h5>Total</h5>
@@ -39,7 +36,6 @@
                 <li><a href="sitemap.html">Site Map</a></li>
                 <li><a href="#">Comments</a></li>
                 <li></li>
-
             </ul>
         </div>
         <a style="cursor: pointer;" href="user_profile.html">
@@ -48,17 +44,16 @@
             </div>
         </a>
         <div class="cart_image" id="cart_image">
-            <img src="cart_add.png" class="cart_img" id="cart_img">
+            <!--<span id="cartBadge" class="badge badge-pill badge-danger">0</span>-->
+            <img src="cart_add.png" class="cart_img" id="cart_img" style="cursor: pointer;">
         </div>
-
     </header>
-    <div class="back">
-        <h1 class="topic">Shop</h1>
+    <h1 class="topic">Shop</h1>
+    <div class="back"> 
         <img src="slider1.png" class="backImg" id="backImg">
         <img src="slider2.png" class="backImg" id="backImg2">
         <img src="slider3.png" alt="he he " class="backImg" id="backImg3">
     </div>
-
     <div class="main-banner" id="top">
         <div class="container-fluid">
 
@@ -164,175 +159,200 @@
     </div>
     <div class="shop">
 
-        <div class="smthin">
-            <h2>Organic Vegetables and Fruits</h2>
+       
+        <div class="smthin" >
+            <h2>Natural Suppliments and Medicine</h2>
             <div class="containerr">
-                <div class="scroller" id="scroller1">
+            <div class="scroller" id="scroller1">
+                <div class="col-lg-7">
+                <div class="right-first-image">
+                <div class="item1" id="veg1">
+                    <img src="carrots.jpeg" class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text">Add to Cart</button>
+                    </div>
+                    <h3 >Organic Carrots<h3 id="vegN1">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP1">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,1)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,1)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,1)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-7">
+                <div class="right-first-image">
+                <div class="item1" id="veg2">
+                    <img src="beans.jpeg" class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text">Add to Cart</button>
+                    </div>
+                    <h3 >Organic Beans<h3 id="vegN2">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP2">250.00</h5></h5>
+                    
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,2)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,2)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,2)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="right-first-image">
+                <div class="item1" id="veg3">
+                    <img src="cucmber.webp"class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text">Add to Cart</button>
+                    </div>
+                    <h3 >Organic Cucumber<h3 id="vegN3">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP3">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,3)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,3)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,3)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="right-first-image">
+                    <div class="item1" id="veg4">
+                <img src="tomaotoes.jpeg" class="food-items">
+                <div class="hover-product">
+                    <button class="button-text">Add to Cart</button>
+                </div>
+                <h3 >Organic Tomatoes<h3 id="vegN4">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP4">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,4)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,4)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,4)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="right-first-image">
+                    <div class="item1" id="veg5">
+                        <img src="apples.jpeg" class="food-items">
+                        <div class="hover-product">
+                            <button class="button-text">Add to Cart</button>
+                        </div>
+                        <h3 >Organic Apples<h3 id="vegN5">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP5">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,5)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,5)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,5)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                    </div>
+                    </div>
+                    </div>
                     <div class="col-lg-7">
                         <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
+                        <div class="item1" id="veg6">
+                            <img src="grapes.jpeg" class="food-items">
+                            <div class="hover-product">
+                                <button class="button-text">Add to Cart</button>
+                            </div>
+                            <h3 >Organic Grapes<h3 id="vegN6">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP6">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,6)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,6)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,6)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="right-first-image">
+                            <div class="item1" id="veg7">
+                                <img src="potatoes.jpeg" class="food-items">
                                 <div class="hover-product">
                                     <button class="button-text">Add to Cart</button>
                                 </div>
-                                <h3>Organic Carrots(100g)</h3>
-                                <h5>LKR:500.00</h5>
+                                <h3 >Organic Potatoes<h3 id="vegN7">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="vegP7">250.00</h5></h5>
+                               
                                 <form onreset="resetOrder();">
 
 
                                     <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
+                                        <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,7)">
+                                            <label for="100g">100g</label>
+                                        <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,7)">
+                                            <label for="pink">250g</label>
+                                        <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,7)">
+                                            <label for="red">500g</label>
+                                            
+                                        
+                                  
+                                   </form>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <div class="item">
-                            <img src="food_display.jpeg" class="food-items">
-                            <h3>Organic Carrots</h3>
-                            <h5>LKR:500.00</h5>
-                            <form onreset="resetOrder();">
-
-
-                                <span>Quantity</span>
-                                <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                <label for="100g">100g</label>
-                                <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                <label for="pink">250g</label>
-                                <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                <label for="red">500g</label>
-
-
-
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    
 
 
                 </div>
@@ -347,291 +367,200 @@
         <div class="smthin" id="smthing2">
             <h2>Organic Vegetables and Fruits</h2>
             <div class="containerr">
-                <div class="scroller" id="scroller2">
+            <div class="scroller" id="scroller2">
+                <div class="col-lg-7">
+                <div class="right-first-image">
+                <div class="item2" id="med1">
+                    <img src="Fishoil.jpeg" class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text1">Add to Cart</button>
+                    </div>
+                    <h3 >Fish Oil<h3 id="medN1">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP1">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,1)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,1)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,1)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-7">
+                <div class="right-first-image">
+                <div class="item2" id="med2">
+                    <img src="Walpenela.webp" class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text1">Add to Cart</button>
+                    </div>
+                    <h3 >Walpenela<h3 id="medN2">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP2">250.00</h5></h5>
+                    
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,2)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,2)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,2)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-lg-7">
+                <div class="item2" id="med3">
+                    <img src="Samahan.jpeg"class="food-items">
+                    <div class="hover-product">
+                        <button class="button-text1">Add to Cart</button>
+                    </div>
+                    <h3 >Samahan<h3 id="medN3">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP3">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,3)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,3)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,3)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="right-first-image">
+                    <div class="item2" id="med4">
+                <img src="Thebu.webp" class="food-items">
+                <div class="hover-product">
+                    <button class="button-text1">Add to Cart</button>
+                </div>
+                <h3 >Thebu Leaf Powder<h3 id="medN4">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP4">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,4)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,4)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,4)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                
+                </div>
+                </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="right-first-image">
+                    <div class="item2" id="med5">
+                        <img src="Moringa.webp" class="food-items">
+                        <div class="hover-product">
+                            <button class="button-text1">Add to Cart</button>
+                        </div>
+                        <h3 >Moringa<h3 id="medN5">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP5">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,5)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,5)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,5)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                    </div>
+                    </div>
+                    </div>
                     <div class="col-lg-7">
                         <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
+                        <div class="item2" id="med6">
+                            <img src="Ranawara.jpeg" class="food-items">
+                            <div class="hover-product">
+                                <button class="button-text1">Add to Cart</button>
+                            </div>
+                            <h3 >Ranawara Tea<h3 id="medN6">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP6">250.00</h5></h5>
+                            <form onreset="resetOrder();">
+	   
+                        
+                                <span>Quantity</span>
+                                    <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,6)">
+                                        <label for="100g">100g</label>
+                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,6)">
+                                        <label for="pink">250g</label>
+                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,6)">
+                                        <label for="red">500g</label>
+                                        
+                                    
+                              
+                               </form>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="right-first-image">
+                            <div class="item2" id="med7">
+                                <img src="Cinnoman Sticks.jpeg" class="food-items">
                                 <div class="hover-product">
-                                    <button class="button-text">Add to Cart</button>
+                                    <button class="button-text1">Add to Cart</button>
                                 </div>
-                                <h3>Organic Carrots(100g)</h3>
-                                <h5>LKR:500.00</h5>
+                                <h3 >Cinnoman Sticks<h3 id="medN7">(100g)</h3></h3>
+                            <h5 >LKR:<h5 id="medP7">250.00</h5></h5>
+                               
                                 <form onreset="resetOrder();">
 
 
                                     <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-                                    <input type="button" value="Place order" id="placeOrder" onclick="placeOrdeR(this.form)">
-                                    <input type="reset" value="Clear order">
-
-                                </form>
+                                        <input type="radio" name="Quantity"checked="false"id="100g" value="100g" onchange="updateDetails(this.value,7)">
+                                            <label for="100g">100g</label>
+                                        <input type="radio" name="Quantity" id="250g" value="250g" onchange="updateDetails(this.value,7)">
+                                            <label for="pink">250g</label>
+                                        <input type="radio" name="Quantity" id="500g" value="500g" onchange="updateDetails(this.value,7)">
+                                            <label for="red">500g</label>
+                                            
+                                        
+                                  
+                                   </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="item">
-                            <img src="food_display.jpeg" class="food-items">
-                            <h3>Organic Carrots</h3>
-                            <h5>LKR:500.00</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
                 <button class="prev" id="prev2"><img src="previous-button-green-icon.webp"></button>
                 <button class="next" id="next2"><img src="next-button-green-icon.svg"></button>
+
             </div>
-
-
         </div>
-
-        <div class="smthin" id="smthing2">
-            <h2>Organic Vegetables and Fruits</h2>
-            <div class="containerr">
-                <div class="scroller" id="scroller3">
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <div class="hover-product">
-                                    <button class="button-text">Add to Cart</button>
-                                </div>
-                                <h3>Organic Carrots(100g)</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-                                    <input type="button" value="Place order" id="placeOrder" onclick="placeOrdeR(this.form)">
-                                    <input type="reset" value="Clear order">
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="item">
-                            <img src="food_display.jpeg" class="food-items">
-                            <h3>Organic Carrots</h3>
-                            <h5>LKR:500.00</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="prev" id="prev3"><img src="previous-button-green-icon.webp"></button>
-                <button class="next" id="next3"><img src="next-button-green-icon.svg"></button>
-            </div>
-
-
         </div>
-        <div class="smthin" id="smthing2">
-            <h2>Organic Vegetables and Fruits</h2>
-            <div class="containerr">
-                <div class="scroller" id="scroller4">
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <div class="hover-product">
-                                    <button class="button-text">Add to Cart</button>
-                                </div>
-                                <h3>Organic Carrots(100g)</h3>
-                                <h5>LKR:500.00</h5>
-                                <form onreset="resetOrder();">
-
-
-                                    <span>Quantity</span>
-                                    <input type="radio" name="Quantity" id="100g" value="100g" onchange="displayBouquet(this.value)">
-                                    <label for="100g">100g</label>
-                                    <input type="radio" name="Quantity" id="250g" value="250g" onchange="displayBouquet(this.value)">
-                                    <label for="pink">250g</label>
-                                    <input type="radio" name="Quantity" id="500g" value="500g" onchange="displayBouquet(this.value)">
-                                    <label for="red">500g</label>
-
-                                    <input type="button" value="Place order" id="placeOrder" onclick="placeOrdeR(this.form)">
-                                    <input type="reset" value="Clear order">
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="item">
-                            <img src="food_display.jpeg" class="food-items">
-                            <h3>Organic Carrots</h3>
-                            <h5>LKR:500.00</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="right-first-image">
-                            <div class="item">
-                                <img src="food_display.jpeg" class="food-items">
-                                <h3>Organic Carrots</h3>
-                                <h5>LKR:500.00</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="prev" id="prev4"><img src="previous-button-green-icon.webp"></button>
-                <button class="next" id="next4"><img src="next-button-green-icon.svg"></button>
-            </div>
-
-
-        </div>
-    </div>
-    <div class="labelOrder">Your Order:
-        <div id="orderDescription"></div>
-        <div class="product" id="order"></div>
-    </div>
+ 
     <footer>
         <div class="section-content">
             <div class="row">
