@@ -8,6 +8,8 @@
 .team-member {
     position: relative;
     margin: 10px;
+    color: black;
+    font-size: small;
 }
 
 .thumbnail {
