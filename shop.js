@@ -2,15 +2,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get cart elements
     var cart = document.getElementById("cart");
     var cartImage = document.getElementById("cart_img");
-    var closeCart = document.getElementById("closeCart");
+    var closeCartt = document.getElementById("closeCart");
 
     // Function to show the cart
     function showCart() {
+        
         cart.classList.add("cart-visible");
+        console.log('plmplm');
     }
 
     // Function to hide the cart
     function hideCart() {
+
         cart.classList.remove("cart-visible");
     }
 
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Hide cart when clicking on close button
-    closeCart.addEventListener("click", function() {
+    closeCartt.addEventListener("click", function() {
         hideCart();
     });
 
@@ -354,24 +357,8 @@ function addToCart5(event, priceIdPrefix) {
     }
   }
   
-  // Close cart functionality
-  try {
-    var closeCartButton = document.getElementById('closeCart');
-    if (closeCartButton) {
-        closeCartButton.addEventListener('click', function() {
-            var cart = document.getElementById('cart');
-            if (cart) {
-                cart.style.display = 'none';
-            } else {
-                throw new Error('Cart element not found.');
-            }
-        });
-    } else {
-        throw new Error('Close cart button not found.');
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
+
+  
   
   // Place order functionality
   try {

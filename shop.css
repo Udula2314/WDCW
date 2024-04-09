@@ -222,41 +222,23 @@ body{
     background-color:#328F12;
 }
 .hover-product {
-    margin-top: -61%; /* Adjust as needed */
-     /* Adjust as needed */
+    margin-top: -61%; 
+     
     visibility: hidden;
     transform: translateY(100%);
     transition: transform 1s ease, opacity 1s ease;
     position: absolute;
 
     width: 100%;
-    /* Adjust background color and opacity */
-    color: white; /* Adjust text color */
-    padding: 10px; /* Add padding */
+    
+    color: white; 
+    padding: 10px; 
     opacity: 0;
     box-sizing: border-box;
 }
 
 
-header {
-    height: var(--header-height);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color:#328F12;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 var(--header-padding);
-    z-index:1;
-    transition: height 0.3s ease 0s, background-color 0.3s ease 0s;
-    transition: padding 0.3s ease, transform 0.3s ease;
-}
-header.shrink {
-    height: 60px;
-    background-color: var(--second-color);
-}
+
 
 .item1:hover .hover-product {
     visibility: visible;
@@ -348,31 +330,15 @@ header.shrink {
   }
   
   .cart.show {
-    right: 0; /* Slide in from the right when it has the 'show' class */
+    right: 0; 
   }
   .logo {
     margin-top:-1%;
-     /* Transition for smooth animation */
+     
   }
   
  
-  body.scrolling header{
-    
-    padding-bottom: 6%;
-    
-  }
-  body.scrolling .main-menu li{
-    margin-top:5%;
-    margin-bottom:-4%;;
-    padding-bottom: 0px;
 
-  }
-  body.scrolling .cart_image{
-    margin-top:11%;
-    margin-bottom:0;
-    padding-bottom: 0px;
-
-  }
   .back{
     width:100%;
     margin-top: 9%;;
